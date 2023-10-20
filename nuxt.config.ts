@@ -2,7 +2,10 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss", "@vite-pwa/nuxt"],
-
+  tailwindcss:{
+    cssPath: '~/assets/css/tailwind.css',
+    configPath: '~tailwind.config.ts',
+  },
   pwa: {
     manifest: {
       theme_color: "#e029e0",
